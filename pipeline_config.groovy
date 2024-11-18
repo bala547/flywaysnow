@@ -8,5 +8,5 @@ pipeline {
         JAVA_TOOL_OPTIONS = "--add-opens=java.base/java.nio=ALL-UNNAMED"
     }
 
-    template = 'mainPipelineTemplate'
+    template = 'templates/mainPipelineTemplate'
 }
