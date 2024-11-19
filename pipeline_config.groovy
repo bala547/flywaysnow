@@ -8,5 +8,9 @@ pipeline {
         JAVA_TOOL_OPTIONS = "--add-opens=java.base/java.nio=ALL-UNNAMED"
     }
 
-    template = 'mainPipelineTemplate.groovy'
+    libraries{
+    checkoutRepo.groovy
+    installFlyway.groovy
+    runFlywayMigrations.groovy   
+    }
 }
