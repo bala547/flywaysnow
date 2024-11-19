@@ -1,9 +1,9 @@
 pipeline {
     agent any
     environment {
-        SNOWFLAKE_URL = "${SNOWFLAKE_URL}"
-        SNOWFLAKE_USER = "${SNOWFLAKE_USERNAME}"
-        SNOWFLAKE_PASSWORD = "${SNOWFLAKE_PASSWORD}"
+        SNOWFLAKE_URL = "https://ni02885.ap-southeast-1.snowflakecomputing.com"
+        SNOWFLAKE_USER = "bala547"
+        SNOWFLAKE_PASSWORD = "BALUvarun3."
         FLYWAY_VERSION = "10.17.3" 
         JAVA_TOOL_OPTIONS = "--add-opens=java.base/java.nio=ALL-UNNAMED"
     }
